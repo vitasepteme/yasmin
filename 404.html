@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada - Dra. Yasmin Carvalho</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* Color Palette - Wine/Purple scheme from logo */
+            --color-primary: #6d4347; /* Clinic color */
+            --color-primary-dark: #5a373b; /* Darker shade for hover states */
+            --color-secondary: #6d4347; /* Clinic color for backgrounds and accents */
+            --color-secondary-light: #8a6b6f; /* Lighter shade for lighter accents */
+            --color-accent: #6d4347; /* Clinic accent color */
+            --color-background: #FFFFFF; /* White background for contrast */
+            --color-text: #333333; /* Dark gray text for contrast */
+            --color-text-light: #666666; /* Medium gray text */
+            --color-border: #8a6b6f; /* Border color */
+            
+            /* Typography */
+            --font-primary: 'Playfair Display', serif; /* Elegant font for headings */
+            --font-secondary: 'Poppins', sans-serif; /* Clean font for body text */
+            --font-size-xs: 0.75rem; /* 12px */
+            --font-size-sm: 0.875rem; /* 14px */
+            --font-size-base: 1rem; /* 16px */
+            --font-size-md: 1.125rem; /* 18px */
+            --font-size-lg: 1.5rem; /* 24px */
+            --font-size-xl: 2rem; /* 32px */
+            --font-size-xxl: 2.5rem; /* 40px */
+            --font-size-xxxl: 3rem; /* 48px */
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem; /* 8px */
+            --spacing-sm: 1rem; /* 16px */
+            --spacing-md: 1.5rem; /* 24px */
+            --spacing-lg: 2rem; /* 32px */
+            --spacing-xl: 3rem; /* 48px */
+            --spacing-xxl: 4rem; /* 64px */
+            
+            /* Border Radius */
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 16px;
+            --border-radius-pill: 50px;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            background: linear-gradient(135deg, rgba(109,67,71,0.1) 0%, rgba(90,55,59,0.1) 100%);
+            overflow-x: hidden;
+            padding: var(--spacing-md);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-md);
+            text-align: center;
+        }
+
+        .error-container {
+            background-color: var(--color-background);
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-xl);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: var(--spacing-xl);
+            border: 1px solid var(--color-border);
+        }
+
+        .error-icon {
+            font-size: var(--font-size-xxxl);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        h1 {
+            font-family: var(--font-primary);
+            font-size: var(--font-size-xxl);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        p {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text-light);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--border-radius-pill);
+            font-family: var(--font-secondary);
+            font-weight: 500;
+            font-size: var(--font-size-sm);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+            margin: var(--spacing-sm);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: var(--color-background);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-secondary-light) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: var(--spacing-lg) 0;
+            color: var(--color-text-light);
+            font-size: var(--font-size-sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-container">
+            <div class="error-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h1>Página Não Encontrada</h1>
+            <p>Desculpe, a página que você está procurando não existe ou foi movida.</p>
+            <p>O endereço pode estar incorreto ou a página pode ter sido removida.</p>
+            
+            <a href="index.html" class="btn btn-primary">
+                <i class="fas fa-home"></i> Voltar para a página inicial
+            </a>
+            
+            <a href="formulario.html" class="btn btn-primary">
+                <i class="fas fa-file-alt"></i> Ir para o formulário
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2023 Dra. Yasmin Carvalho. Todos os direitos reservados.</p>
+            <p>Clínica odontológica referência em São João do Carú, Bom Jardim e Santa Inês.</p>
+        </div>
+    </div>
+</body>
+</html>

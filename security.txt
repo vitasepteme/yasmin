@@ -1,0 +1,20 @@
+# Security Policy for Dra. Yasmin Carvalho's Dental Clinic Website
+# Following the guidelines at https://securitytxt.org/
+
+# Contact information for security issues
+Contact: mailto:security@drayasmincarvalho.com
+
+# Our security policy
+Policy: https://drayasmincarvalho.com/security-policy.html
+
+# Preferred languages for communication
+Preferred-Languages: pt, en
+
+# Expiration date for this security.txt file
+Expires: 2026-12-31T23:59:59z
+
+# Canonical URL for this security.txt file
+Canonical: https://drayasmincarvalho.com/security.txt
+
+# Hiring security researchers
+Hiring: https://drayasmincarvalho.com/jobs

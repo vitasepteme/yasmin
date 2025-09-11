@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://drayasmincarvalho.com/sitemap.xml
+
+# Prevent indexing of form submissions or sensitive paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl delay for search engines
+Crawl-delay: 10
