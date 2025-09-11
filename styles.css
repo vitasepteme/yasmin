@@ -1003,3 +1003,22 @@ ul {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+/* Credit section */
+.footer__credit {
+  text-align: center;
+  padding: var(--spacing-sm) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__credit a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.footer__credit a:hover {
+  color: var(--color-background);
+}
